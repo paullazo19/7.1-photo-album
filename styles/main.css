@@ -122,6 +122,12 @@ body {
   margin-top: 3rem;
   text-align: center; }
 
+.modal__backButton {
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 1rem; }
+
 .albums__aside {
   width: 25%;
   display: inline-block; }

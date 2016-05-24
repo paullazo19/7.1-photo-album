@@ -35,7 +35,7 @@ export default React.createClass({
         }, this)
         }
       </ul>
-      <div className={this.state.isOpen ? "modal" : "hidden"} photo={this.state.currentPhoto}><button className="modal__backButton" onClick={this.closeModal}>Back to {this.props.album.title}</button><h2 className="album__photo--title">{this.state.currentPhoto.title}</h2><img className="album__photo--fullSize" src={`../assets/${this.state.currentPhoto.src}`}/></div>
+      <div className={this.state.isOpen ? "modal" : "hidden"} photo={this.state.currentPhoto}><button className="modal__backButton" onClick={this.closeModal}><i className="fa fa-chevron-left"></i>Back to {this.props.album.title}</button><h2 className="album__photo--title">{this.state.currentPhoto.title}</h2><img className="album__photo--fullSize" src={`../assets/${this.state.currentPhoto.src}`}/></div>
 
     </section>
     )
