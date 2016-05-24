@@ -16,6 +16,22 @@ export default React.createClass({
       }
     )
   },
+  leftArrowClick(e){
+    console.log(this.props.album.photos[(e.currentTarget.id)--]);
+    this.setState(
+      {
+        currentPhoto: this.props.album.photos[(e.currentTarget.id)--]
+      }
+    )
+  },
+  rightArrowClick(e){
+    console.log(this.props.album.photos[(e.currentTarget.id)++]);
+    this.setState(
+      {
+        currentPhoto: this.props.album.photos[(e.currentTarget.id)++]
+      }
+    )
+  },
   closeModal(e){
     this.setState(
       {
@@ -24,7 +40,6 @@ export default React.createClass({
     )
   },
   render() {
-    console.log(this.state.currentPhoto.src);
     return (
     <section className="album__thumbnail--list">
       <ul>
@@ -35,7 +50,7 @@ export default React.createClass({
         }, this)
         }
       </ul>
-      <div className={this.state.isOpen ? "modal" : "hidden"} photo={this.state.currentPhoto}><button className="modal__backButton" onClick={this.closeModal}><i className="fa fa-chevron-left"></i>Back to {this.props.album.title}</button><h2 className="album__photo--title">{this.state.currentPhoto.title}</h2><img className="album__photo--fullSize" src={`../assets/${this.state.currentPhoto.src}`}/></div>
+      <div className={this.state.isOpen ? "modal" : "hidden"} photo={this.state.currentPhoto}><button className="modal__backButton" onClick={this.closeModal}><i className="fa fa-chevron-left icon--back"></i>Back to {this.props.album.title}</button><h2 className="album__photo--title">{this.state.currentPhoto.title}</h2><i className="fa fa-arrow-circle-left fa-3x icon--left" onClick={this.leftArrowClick}></i><img className="album__photo--fullSize" src={`../assets/${this.state.currentPhoto.src}`}/><i className="fa fa-arrow-circle-right fa-3x icon--right" onClick={this.rightArrowClick}></i></div>
 
     </section>
     )
