@@ -1,0 +1,134 @@
+.grid__row {
+  font-size: 0; }
+
+.grid__col--1 {
+  display: inline-block;
+  width: 8.33333%;
+  font-size: 1.4rem; }
+
+.grid__col--2 {
+  display: inline-block;
+  width: 16.66667%;
+  font-size: 1.4rem; }
+
+.grid__col--3 {
+  display: inline-block;
+  width: 25%;
+  font-size: 1.4rem; }
+
+.grid__col--4 {
+  display: inline-block;
+  width: 33.33333%;
+  font-size: 1.4rem; }
+
+.grid__col--5 {
+  display: inline-block;
+  width: 41.66667%;
+  font-size: 1.4rem; }
+
+.grid__col--6 {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.4rem; }
+
+.grid__col--7 {
+  display: inline-block;
+  width: 58.33333%;
+  font-size: 1.4rem; }
+
+.grid__col--8 {
+  display: inline-block;
+  width: 66.66667%;
+  font-size: 1.4rem; }
+
+.grid__col--9 {
+  display: inline-block;
+  width: 75%;
+  font-size: 1.4rem; }
+
+.grid__col--10 {
+  display: inline-block;
+  width: 83.33333%;
+  font-size: 1.4rem; }
+
+.grid__col--11 {
+  display: inline-block;
+  width: 91.66667%;
+  font-size: 1.4rem; }
+
+.grid__col--12 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "helvetica", sans-serif; }
+
+.album__thumbnail--list {
+  display: inline-block;
+  width: 50%; }
+
+.album__thumbnail--heading {
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center; }
+
+.album__thumbnail {
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 2rem;
+  overflow: hidden; }
+
+.album__thumbnail--image {
+  width: 100%; }
+
+.album__thumbnail--image img {
+  width: 100%; }
+
+.album__thumbnail--title {
+  color: #969696;
+  padding-left: 0.5rem; }
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.hidden {
+  display: none; }
+
+.albums__aside {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top; }
+
+.albums__nav {
+  background-color: #323232;
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.albums__nav--link {
+  background-color: white;
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 90%; }
+
+.albums__nav--link:active {
+  background-color: #006464; }
+
+/*# sourceMappingURL=main.css.map */
